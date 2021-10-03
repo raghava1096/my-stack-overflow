@@ -13,11 +13,23 @@ const params = {
 export const getQuestions = (value: string) => {
   const query = queryString.stringify({
     ...params,
+    intitle: value
+  });
+  const result = axios
+    .get(`${BASE_URL}/search/?${query}`)
+    .then((result) => result?.data)
+    .catch((error) => { throw error; });
+  return result;
+};
+
+export const getQuestionsByAdvanceSearch = (value: string) => {
+  const query = queryString.stringify({
+    ...params,
     q: value
   });
   const result = axios
     .get(`${BASE_URL}/search/advanced?${query}`)
     .then((result) => result?.data)
-    .catch((error) => error);
+    .catch((error) => { throw error; });
   return result;
 };
