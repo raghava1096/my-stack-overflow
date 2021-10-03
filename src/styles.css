@@ -2,3 +2,36 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+
+.question-hedaer {
+  color: brown;
+  font-size: 1.0rem;
+  font-weight: normal;
+}
+
+.darkTheme {
+  font-size: 1.0rem;
+  font-weight: normal;
+}
+
+.resultsFound {
+  color: green;
+}
+
+.subHeader {
+  color: brown;
+}
+
+ .error {
+  color: red;
+}
+
+.MuiBox-root-1, .MuiTablePagination-toolbar {
+  background-color: white;
+  padding-bottom: 20px;
+}
+
+.MuiContainer-maxWidthMd {
+  margin-bottom: auto;
+}

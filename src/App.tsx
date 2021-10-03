@@ -1,13 +1,16 @@
 import "./styles.css";
 import React from "react";
-import SearchQuery from "./search-query";
+import Header from "./Components/header";
+import Footer from "./Components/footer";
+import AppContent from "./Components/app-content";
+
 
 const App: React.FC = () => {
-  return (
+   return (
     <div className="App">
-      <h1>My Stack-Overflow</h1>
-      <h2>Let's get started...!!!</h2>
-      <SearchQuery />
+      <Header />
+      <AppContent />
+      <Footer />
     </div>
   );
 };
