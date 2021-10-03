@@ -23,7 +23,7 @@ Basically  this app uses the pullically avaialble stack exchange API's to get th
 
 # steps to run the project
 ### Prerequisites
-1. NodeJs must be installed to run this project. 
+1. NodeJs must be installed on the system to run this project. 
     #### Install on Windows
 - Use [Node Version Manager (NVM) for Windows](https://github.com/coreybutler/nvm-windows)
 - Install NodeJS 14.16.0 x64
