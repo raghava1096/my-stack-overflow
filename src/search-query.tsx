@@ -16,7 +16,7 @@ const SearchQuery: React.FC = () => {
 
   const getSearchresults = async () => {
     console.log("onRequestSearch", queryString);
-    const result = await getQuestions(queryString);
+    const result = await getQuestions(queryString ?? "");
     console.log("result", result);
 
     if (result && result?.items) {
