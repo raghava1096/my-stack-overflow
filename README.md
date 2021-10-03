@@ -1,5 +1,5 @@
 # my-stack-overflow
-
+# My Stack-Overflow
 My Stack-Overflow application is a web application developed using ReactJs and few other javascript libarires, this application acts like proxy of stack overflow website. We can use this site to enter our query and get the list of questions posted in the stack overflow website related to that entered query. 
 Basically  this app uses the pullically avaialble stack exchange API's to get the search results from stack overflow. 
   Public API's used in this application.
