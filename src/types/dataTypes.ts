@@ -12,7 +12,7 @@ export interface QuestionList {
   answer_count: number;
   is_answered: boolean;
   question_id: string;
-  creation_date: string;
+  creation_date: number;
   tags: string[];
   last_activity_date: string;
   accepted_answer_id: string;
