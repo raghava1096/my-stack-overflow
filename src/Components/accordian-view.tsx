@@ -53,6 +53,7 @@ const HeaderWrapper = styled.div<wrapperProps>`
 
 const AccordianView: React.FC<Props> = ({ item }) => {
   const darkTheme = JSON.parse(window.localStorage.getItem("darkTheme") || "false");
+  const postedDate = item.creation_date * 1000;
   return (
     <Accordion>
       <HeaderWrapper  darkTheme={darkTheme}>
@@ -70,7 +71,7 @@ const AccordianView: React.FC<Props> = ({ item }) => {
             </div>
           </div>
           <div className="resultsFound">{`Total answers: ${item.answer_count}`}</div>
-          <div className="subHeader">{`Posted on: ${new Date(item.creation_date).toDateString()}`}</div>
+          <div className="subHeader">{`Posted on: ${new Date(postedDate).toDateString()}`}</div>
           <div><a style={{display: "table-cell"}} target="_blank" href={item.link}>Click here to view answers</a></div>
         </AccordionDetails>
       </Wrapper>
